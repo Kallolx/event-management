@@ -11,7 +11,6 @@ import {
   ArrowRightIcon,
 } from "@heroicons/react/24/outline";
 import { WhatsappIcon } from "@/components/SocialIcons";
-import EventManagers from "@/components/EventManagers";
 import { supabase } from "@/lib/supabase";
 import ImageSlider from "@/components/ImageSlider";
 import PromoBanner from "@/components/PromoBanner";

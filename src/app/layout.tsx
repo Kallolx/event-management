@@ -10,8 +10,8 @@ const anekBangla = Anek_Bangla({
 })
 
 export const metadata = {
-  title: 'EventHub - Iftar Gathering 2024',
-  description: 'Register for the upcoming Iftar gathering event',
+  title: 'Lets Break Fast - Iftar Gathering 2025',
+  description: 'Register for the Iftar gathering event of 2017 & 2019 batch students',
 }
 
 export default function RootLayout({
