@@ -49,7 +49,7 @@ export default function SuccessModal({ isOpen, onClose }: SuccessModalProps) {
                   
                   <div className="mt-2">
                     <p className="text-sm text-gray-400">
-                      Thank you for registering for the Iftar event. We will review your registration and send you a confirmation message soon.
+                      Thank you for registering for the Iftar event. We will send a verification SMS to your provided mobile number within 60 minutes.
                     </p>
                   </div>
 
