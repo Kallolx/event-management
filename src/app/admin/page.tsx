@@ -15,8 +15,19 @@ import {
 
 type RegistrationStatus = 'pending' | 'confirmed' | 'cancelled'
 
+interface Registration {
+  id: string
+  full_name: string
+  batch: string
+  phone: string
+  payment_method: string
+  transaction_id: string
+  created_at: string
+  status: RegistrationStatus
+}
+
 export default function AdminPage() {
-  const [registrations, setRegistrations] = useState<any[]>([])
+  const [registrations, setRegistrations] = useState<Registration[]>([])
   const [loading, setLoading] = useState(true)
   const [activeTab, setActiveTab] = useState<'pending' | 'confirmed'>('pending')
   const [expandedCard, setExpandedCard] = useState<string | null>(null)
@@ -66,7 +77,7 @@ export default function AdminPage() {
     )
   }
 
-  const RegistrationCard = ({ registration, isPending = false }) => (
+  const RegistrationCard = ({ registration, isPending = false }: { registration: Registration, isPending?: boolean }) => (
     <div className="bg-gray-800 rounded-xl border border-gray-700 overflow-hidden">
       {/* Header */}
       <div 
