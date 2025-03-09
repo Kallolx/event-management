@@ -32,12 +32,12 @@ export default function Register() {
   const paymentMethods = {
     bkash: {
       name: 'Bkash',
-      number: '01712-345678',
+      number: '01791-934192',
       type: 'Personal'
     },
     nagad: {
       name: 'Nagad',
-      number: '01712-345678',
+      number: '01791-934192',
       type: 'Personal'
     }
   }
